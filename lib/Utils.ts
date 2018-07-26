@@ -153,4 +153,15 @@ export class Utils {
     return result;
   }
 
+
+  static softIndexOf(arr: any[], item: any): number {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] == item) {
+        return i;
+      }
+    }
+
+    return -1;
+  }
+
 }
